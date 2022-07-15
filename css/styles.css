@@ -138,13 +138,10 @@ img{
     letter-spacing: 0.03em;
 }
 
-
-    
 /* header-items */
 .header-items{
     display: flex;
     align-items: center;
-    /* height: 80px; */
 }
 
 .header-item {
@@ -189,7 +186,6 @@ img{
     left: 0;
     bottom: 0; 
     transform: translateY(1.6px); 
-    /* outline: 5px solid rgb(4, 0, 255); */
 }
 .portfolio.current::after{
     content:"" ;
@@ -253,7 +249,7 @@ img{
 /* main */
 /* hero */
 .hero {
-    /* background-color: var(--bgc-foot-hero); */
+    background-color: var(--bgc-foot-hero);
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -264,18 +260,15 @@ img{
     min-height: 600;
     margin-left: auto;
     margin-right: auto;
-
     background-image: linear-gradient(
         to right,
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)
     ),
     url(../images/hero/Img-hero.jpg);
-
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
 }
 
 .hero-title {
@@ -305,24 +298,13 @@ img{
 
 } 
 
-/* .button-hero:focus,
-.button-hero:hover{
-    color: var(--text-third-tlbgc);
-} */
-
-
-
 
 /* секція особливості/features */
 
-/* .features {
-    display: flex;
-}  */
 
 .features-items{
     display: flex;
 }
-
 
 .features-item{
     width: 270px;
@@ -334,7 +316,6 @@ img{
     height: 120px;
     margin-bottom: 30px;
     background-image:url(../images/svg/зразки/antenna.svg);
-    /* outline: 5px solid rgb(4, 0, 255); */
     background-color: var(--bgc-ourcom);
     background-repeat: no-repeat;
     background-position: center;
@@ -345,7 +326,6 @@ img{
     height: 120px;
     margin-bottom: 30px;
     background-image:url(../images/svg/зразки/clock.svg);
-    /* outline: 5px solid rgb(4, 0, 255); */
     background-color: var(--bgc-ourcom);
     background-repeat: no-repeat;
     background-position: center;
@@ -356,7 +336,6 @@ img{
     height: 120px;
     margin-bottom: 30px;
     background-image:url(../images/svg/зразки/diagram.svg);
-    /* outline: 5px solid rgb(4, 0, 255); */
     background-color: var(--bgc-ourcom);
     background-repeat: no-repeat;
     background-position: center;
@@ -367,7 +346,6 @@ img{
     height: 120px;
     margin-bottom: 30px;
     background-image:url(../images/svg/зразки/astronaut.svg);
-    /* outline: 5px solid rgb(4, 0, 255); */
     background-color: var(--bgc-ourcom);
     background-repeat: no-repeat;
     background-position: center;
@@ -396,7 +374,6 @@ img{
 }
 
 /* чем мьі занимаемся/діяльність/activity */
-
 .activity{
     padding-top: 0px;
 }
@@ -439,7 +416,6 @@ align-items: center;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--text-third-tlbgc);
-/* outline: 2px solid red; */
 background: rgba(47, 48, 58, 0.8);
 }
 
@@ -512,18 +488,13 @@ background: rgba(47, 48, 58, 0.8);
     background-color var(--anim);
 }
 
-
 .teamcard-link:hover,
 .teamcard-link:focus{
     background-color: var(--brand-color);
     fill: var(--text-third-tlbgc);
 }
 
-
-
-
 /* Постійні клієнти */
-
 
 .clients-title{
     font-weight: 700;
@@ -532,7 +503,6 @@ background: rgba(47, 48, 58, 0.8);
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 50px;
-
 }
 
 .clients-items{
@@ -974,9 +944,7 @@ color: var(--text-third-tlbgc);
     letter-spacing: 0.01em;
     color: var(--text-second);
     margin-bottom: 4px;
-
 }
-
 
 .modal-textarea{
     height: 120px;
@@ -991,37 +959,6 @@ color: var(--text-third-tlbgc);
 .checkbox{
 
 }
-.input-checkbox{
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-}
-
-.modal-form-checkbox{
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 16px;
-    height: 15px;
-    margin-right: 7px;
-    outline: 2px solid var(--text-first);
-    outline-offset: -2px;
-    border-radius: 2px;
-    transition: background-color var(--anim);
-    transition: outline-solid var(--anim);
-}
-.modal-form-checkbox{
-    fill: transparent;
-    transition: fill var(--anim);
-    }
-
 .label-checkbox{
     display: flex;
     justify-content: center;
@@ -1036,7 +973,37 @@ line-height: calc(24/14);
 letter-spacing: 0.03em;
 color: var(--text-second);
 user-select: none;
+cursor: pointer;
+}
 
+.input-checkbox{
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+
+}
+
+.modal-form-checkbox{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
+    outline: 2px solid var(--text-first);
+    outline-offset: -2px;
+    border-radius: 2px;
+    transition: background-color var(--anim);
+    transition: outline var(--anim);
+    fill: transparent;
+    transition: fill var(--anim);
 }
 
 .input-checkbox:checked + .modal-form-checkbox{
@@ -1046,6 +1013,8 @@ user-select: none;
 
 
 .checkbox-link{
+    display: inline-block;
+    margin-left: 3px;
     color: var(--brand-color);
 }
 
@@ -1070,7 +1039,3 @@ user-select: none;
 
 }
 
-.button-modal:hover,
-.button-modal:focus{
-
-}
