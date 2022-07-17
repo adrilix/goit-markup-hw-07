@@ -21,45 +21,45 @@
   <body>
     <!--шапка сторінки-->
     <header class="header">
-      <div class="container box-header">
+      <div class="container header__container">
         <!--навігація сторінки-->
-        <nav class="box-nav">
-          <div class="header-link">
+        <nav class="header__nav">
+          <div class="logo header__logo">
             <a class="list" href="index.html"
-              ><span class="logo-web">Web</span>
-              <span class="logo-header">Studio</span>
+              ><span class="logo--text-web">Web</span>
+              <span class="logo--text-header">Studio</span>
             </a>
           </div>
 
-          <ul class="header-items list">
-            <li class="header-item">
-              <a class="nav-link list studio current" href="./index.html"
+          <ul class="nav list">
+            <li class="nav__item">
+              <a class="nav__link nav__link--current list" href="./index.html"
                 >Студия</a
               >
             </li>
 
-            <li class="header-item">
-              <a class="nav-link list" href="./portfolio.html">Портфолио</a>
+            <li class="nav__item">
+              <a class="nav__link list" href="./portfolio.html">Портфолио</a>
             </li>
 
-            <li class="header-item">
-              <a class="nav-link list" href="Контакты">Контакты</a>
+            <li class="nav__item">
+              <a class="nav__link list" href="Контакты">Контакты</a>
             </li>
           </ul>
         </nav>
 
         <ul class="box-contacts list">
-          <li class="contact">
-            <a class="mail list" href="info@devstudio.com">
-              <svg class="svg-header" width="16" height="12">
+          <li class="box-contacts__item">
+            <a class="box-contacts__mail list" href="info@devstudio.com">
+              <svg class="box-contacts__icon box-contacts__icon--modificator" width="16" height="12">
                 <use href="./images/svg/icons.svg#envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="contact">
-            <a class="phone list" href="tel:+380961111111">
-              <svg class="svg-header" width="12" height="16">
+          <li class="box-contacts__item">
+            <a class="box-contacts__phone list" href="tel:+380961111111">
+              <svg class="box-contacts__icon box-contacts__icon--modificator" width="12" height="16">
                 <use href="./images/svg/icons.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11
@@ -71,9 +71,9 @@
     <!-- унікальний контент сторінки -->
     <main>
       <!-- hero -->
-      <section class="hero overlay">
-        <h1 class="hero-title">Эффективные решения<br />для вашего бизнеса</h1>
-        <button class="button-hero" type="button" data-modal-open>
+      <section class="hero hero__overlay">
+        <h1 class="hero__title">Эффективные решения<br />для вашего бизнеса</h1>
+        <button class="btn" type="button" data-modal-open>
           Заказать услугу
         </button>
       </section>
@@ -81,32 +81,34 @@
       <!-- особенности -->
       <section class="features section">
         <div class="container">
-          <h2 class="visually-hidden section-title">Особенности</h2>
-          <ul class="features-items list">
-            <li class="features-item antenna">
-              <h3 class="features-title">Внимание к деталям</h3>
-              <p class="features-text">
+          <h2 class="visually-hidden ">Особенности</h2>
+
+          <ul class="features__items list">
+
+            <li class="features__item features__antenna">
+              <h3 class="features__title">Внимание к деталям</h3>
+              <p class="features__text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="features-item clock">
-              <h3 class="features-title">Пунктуальность</h3>
-              <p class="features-text">
+            <li class="features__item features__clock">
+              <h3 class="features__title">Пунктуальность</h3>
+              <p class="features__text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="features-item diagram">
-              <h3 class="features-title">Планирование</h3>
-              <p class="features-text">
+            <li class="features__item features__diagram">
+              <h3 class="features__title">Планирование</h3>
+              <p class="features__text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="features-item astronaut">
-              <h3 class="features-title">Современные технологии</h3>
-              <p class="features-text">
+            <li class="features__item features__astronaut">
+              <h3 class="features__title">Современные технологии</h3>
+              <p class="features__text">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
               </p>
@@ -118,34 +120,34 @@
       <!-- чем мьі занимаемся -->
       <section class="activity section">
         <div class="container">
-          <h2 class="activity-title">Чем мы занимаемся</h2>
-          <ul class="activity-items list">
-            <li class="activity-item">
+          <h2 class="activity__title">Чем мы занимаемся</h2>
+          <ul class="activity__items list">
+            <li class="activity__item">
               <img
                 src="./images/box1.jpg"
                 alt="рабочий стол програмиста с монитором, планшетом, клавиатурой,руками на ней и распечатаньім ТЗ"
                 width="370"
                 height="294"
               />
-              <p class="label">Десктопные приложения</p>
+              <p class="activity__label">Десктопные приложения</p>
             </li>
-            <li class="activity-item">
+            <li class="activity__item">
               <img
                 src="./images/box2.jpg"
                 alt="програмист на ноутбуке вьібирает формат оформления под размер телефона, держа его в руке"
                 width="370"
                 height="294"
               />
-              <p class="label">Мобильные приложения</p>
+              <p class="activity__label">Мобильные приложения</p>
             </li>
-            <li class="activity-item">
+            <li class="activity__item">
               <img
                 src="./images/box3.jpg"
                 alt="планшет с цветовай палитрой, в руках на фоне клавиатурьі и монитора "
                 width="370"
                 height="294"
               />
-              <p class="label">Дизайнерские решения</p>
+              <p class="activity__label">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -154,66 +156,66 @@
       <!-- наша команда -->
       <section class="team section">
         <div class="container">
-          <h2 class="team-title">Наша команда</h2>
-          <ul class="team-items list">
-            <li class="team-item">
+          <h2 class="team__title">Наша команда</h2>
+          <ul class="team__items list">
+            <li class="team__item">
               <img
                 src="./images/teamcard1.jpg"
                 alt="ульібающийся мужчина в очках с бородой"
                 width="270"
                 height="260"
               />
-              <div class="team-caption">
-                <h3 class="teamcard">Игорь Демьяненко</h3>
-                <p class="teamcard-text">Product Designer</p>
-                <ul class="teamcard-links list">
-                  <li class="teamcard-li">
+              <div class="team__caption">
+                <h3 class="team__teamcard">Игорь Демьяненко</h3>
+                <p class="team__text">Product Designer</p>
+                <ul class="team__links list">
+                  <li class="team__unit">
                     <a
-                      class="teamcard-link"
+                      class="team__link"
                       href=""
                       target="_blank"
                       aria-label="инстаграм Игоря Демьяненко"
                     >
-                      <svg class="svg-social-team" width="20" height="20">
+                      <svg width="20" height="20">
                         <use href="./images/svg/icons.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
 
-                  <li class="teamcard-li">
+                  <li class="team__unit">
                     <a
-                      class="teamcard-link"
+                      class="team__link"
                       href=""
                       target="_blank"
                       aria-label="твиттер Игоря Демьяненко"
                     >
-                      <svg class="svg-social-team" width="20" height="20">
+                      <svg width="20" height="20">
                         <use href="./images/svg/icons.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
 
-                  <li class="teamcard-li">
+                  <li class="team__unit">
                     <a
-                      class="teamcard-link"
+                      class="team__link"
                       href=""
                       target="_blank"
                       aria-label="фейсбук Игоря Демьяненко"
                     >
-                      <svg class="svg-social-team" width="20" height="20">
+                      <svg width="20" height="20">
                         <use href="./images/svg/icons.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
 
-                  <li class="teamcard-li">
+                  <li class="team__unit">
                     <a
-                      class="teamcard-link"
+                      class="team__link"
                       href=""
                       target="_blank"
                       aria-label="линкед ин Игоря Демьяненко"
                     >
-                      <svg class="svg-social-team" width="20" height="20">
+                      <svg width="20" height="20">
                         <use href="./images/svg/icons.svg#linkedin"></use>
                       </svg>
                     </a>
@@ -222,46 +224,46 @@
               </div>
             </li>
 
-            <li class="team-item">
+            <li class="team__item">
               <img
                 src="./images/teamcard2.jpg"
                 alt="ульібающаяся женщина в очках со скрещенньіми на груди руками"
                 width="270"
                 height="260"
               />
-              <div class="team-caption">
-                <h3 class="teamcard">Ольга Репина</h3>
-                <p class="teamcard-text">Frontend Developer</p>
-                <ul class="teamcard-links list">
-                  <li class="teamcard-li">
+              <div class="team__caption">
+                <h3 class="team__teamcard">Ольга Репина</h3>
+                <p class="team__text">Frontend Developer</p>
+                <ul class="team__links list">
+                  <li class="team__unit">
                     <a
-                      class="teamcard-link"
+                      class="team__link"
                       href=""
                       target="_blank"
                       aria-label="инстаграм Ольги Репиной"
                     >
-                      <svg class="svg-social-team" width="20" height="20">
+                      <svg width="20" height="20">
                         <use href="./images/svg/icons.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
 
-                  <li class="teamcard-li">
+                  <li class="team__unit">
                     <a
-                      class="teamcard-link"
+                      class="team__link"
                       href=""
                       target="_blank"
                       aria-label="твиттер Ольги Репиной"
                     >
-                      <svg class="svg-social-team" width="20" height="20">
+                      <svg width="20" height="20">
                         <use href="./images/svg/icons.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
 
-                  <li class="teamcard-li">
+                  <li class="team__unit">
                     <a
-                      class="teamcard-link"
+                      class="team__link"
                       href=""
                       target="_blank"
                       aria-label="фейсбук Ольги Репиной"
@@ -272,9 +274,9 @@
                     </a>
                   </li>
 
-                  <li class="teamcard-li">
+                  <li class="team__unit">
                     <a
-                      class="teamcard-link"
+                      class="team__link"
                       href=""
                       target="_blank"
                       aria-label="линкед ин Ольги Репиной"
@@ -288,33 +290,33 @@
               </div>
             </li>
 
-            <li class="team-item">
+            <li class="team__item">
               <img
                 src="./images/teamcard3.jpg"
                 alt="ульібающийся мужчина в светлой рубашке"
                 width="270"
                 height="260"
               />
-              <div class="team-caption">
-                <h3 class="teamcard">Николай Тарасов</h3>
-                <p class="teamcard-text">Marketing</p>
-                <ul class="teamcard-links list">
-                  <li class="teamcard-li">
+              <div class="team__caption">
+                <h3 class="team__teamcard">Николай Тарасов</h3>
+                <p class="team__text">Marketing</p>
+                <ul class="team__links list">
+                  <li class="team-unit">
                     <a
-                      class="teamcard-link"
+                      class="team__link"
                       href=""
                       target="_blank"
                       aria-label="инстаграм Николая Тарасова"
                     >
-                      <svg class="svg-social-team" width="20" height="20">
+                      <svg width="20" height="20">
                         <use href="./images/svg/icons.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
 
-                  <li class="teamcard-li">
+                  <li class="team__unit">
                     <a
-                      class="teamcard-link"
+                      class="team__link"
                       href=""
                       target="_blank"
                       aria-label="твиттер Николая Тарасова"
@@ -325,9 +327,9 @@
                     </a>
                   </li>
 
-                  <li class="teamcard-li">
+                  <li class="team__unit">
                     <a
-                      class="teamcard-link"
+                      class="team__link"
                       href=""
                       target="_blank"
                       aria-label="фейсбук Николая Тарасова"
@@ -338,9 +340,9 @@
                     </a>
                   </li>
 
-                  <li class="teamcard-li">
+                  <li class="team__unit">
                     <a
-                      class="teamcard-link"
+                      class="team__link"
                       href=""
                       target="_blank"
                       aria-label="линкед ин Николая Тарасова"
@@ -354,20 +356,20 @@
               </div>
             </li>
 
-            <li class="team-item">
+            <li class="team__item">
               <img
                 src="./images/teamcard4.jpg"
                 alt="ульібающийся мужчина в очках с бородой в черной футболке"
                 width="270"
                 height="260"
               />
-              <div class="team-caption">
-                <h3 class="teamcard">Михаил Ермаков</h3>
-                <p class="teamcard-text">UI Designer</p>
-                <ul class="teamcard-links list">
-                  <li class="teamcard-li">
+              <div class="team__caption">
+                <h3 class="team__teamcard">Михаил Ермаков</h3>
+                <p class="team__text">UI Designer</p>
+                <ul class="team__links list">
+                  <li class="team__unit">
                     <a
-                      class="teamcard-link"
+                      class="team__link"
                       href=""
                       target="_blank"
                       aria-label="инстаграм Михаила Ермакова"
@@ -378,9 +380,9 @@
                     </a>
                   </li>
 
-                  <li class="teamcard-li">
+                  <li class="team__unit">
                     <a
-                      class="teamcard-link"
+                      class="team__link"
                       href=""
                       target="_blank"
                       aria-label="твиттер Михаила Ермакова"
@@ -391,9 +393,9 @@
                     </a>
                   </li>
 
-                  <li class="teamcard-li">
+                  <li class="team__unit">
                     <a
-                      class="teamcard-link"
+                      class="team__link"
                       href=""
                       target="_blank"
                       aria-label="фейсбук Михаила Ермакова"
@@ -404,9 +406,9 @@
                     </a>
                   </li>
 
-                  <li class="teamcard-li">
+                  <li class="team__unit">
                     <a
-                      class="teamcard-link"
+                      class="team__link"
                       href=""
                       target="_blank"
                       aria-label="линкед ин Михаила Ермакова"
@@ -426,81 +428,81 @@
       <!-- Постійні клієнти -->
       <section class="clients section">
         <div class="container">
-          <h2 class="clients-title">Постоянные клиенты</h2>
-          <ul class="clients-items list">
-            <li class="clients-item">
+          <h2 class="clients__title">Постоянные клиенты</h2>
+          <ul class="clients__items list">
+            <li class="clients__item">
               <a
-                class="clients-link"
+                class="clients__link"
                 href=""
                 target="_blank"
                 aria-label="клиент я єнд ко"
               >
-                <svg class="svg-social" width="106" height="60">
+                <svg width="106" height="60">
                   <use href="./images/svg/icons.svg#clientlogo1"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="clients-item">
+            <li class="clients__item">
               <a
-                class="clients-link"
+                class="clients__link"
                 href=""
                 target="_blank"
                 aria-label="таг лайн хьо"
               >
-                <svg class="svg-social" width="106" height="60">
+                <svg width="106" height="60">
                   <use href="./images/svg/icons.svg#clientlogo2"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="clients-item">
+            <li class="clients__item">
               <a
-                class="clients-link"
+                class="clients__link"
                 href=""
                 target="_blank"
                 aria-label="компани"
               >
-                <svg class="svg-social" width="106" height="60">
+                <svg width="106" height="60">
                   <use href="./images/svg/icons.svg#clientlogo3"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="clients-item">
+            <li class="clients__item">
               <a
-                class="clients-link"
+                class="clients__link"
                 href=""
                 target="_blank"
                 aria-label="фостер петерс"
               >
-                <svg class="svg-social" width="106" height="60">
+                <svg width="106" height="60">
                   <use href="./images/svg/icons.svg#clientlogo4"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="clients-item">
+            <li class="clients__item">
               <a
-                class="clients-link"
+                class="clients__link"
                 href=""
                 target="_blank"
                 aria-label="бранд"
               >
-                <svg class="svg-social" width="106" height="60">
+                <svg width="106" height="60">
                   <use href="./images/svg/icons.svg#clientlogo5"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="clients-item">
+            <li class="clients__item">
               <a
-                class="clients-link"
+                class="clients__link"
                 href=""
                 target="_blank"
                 aria-label="таглайн"
               >
-                <svg class="svg-social" width="106" height="60">
+                <svg width="106" height="60">
                   <use href="./images/svg/icons.svg#clientlogo6"></use>
                 </svg>
               </a>
@@ -539,7 +541,7 @@
         </div>
 
         <div class="footer-social">
-          <h3 class="social-subtitle">Присоединяйтесь</h3>
+          <strong class="social-subtitle">Присоединяйтесь</strong>
           <ul class="social-links list">
             <li class="social-network-li">
               <a
