@@ -26,8 +26,12 @@
         <nav class="header__nav">
           <div class="logo header__logo">
             <a class="list" href="index.html"
-              ><span class="logo--text-web">Web</span>
-              <span class="logo--text-header">Studio</span>
+              ><span class="logo__text-web logo__text-web--modificator"
+                >Web</span
+              >
+              <span class="logo__text-studio logo__text-studio--modificator"
+                >Studio</span
+              >
             </a>
           </div>
 
@@ -51,7 +55,11 @@
         <ul class="box-contacts list">
           <li class="box-contacts__item">
             <a class="box-contacts__mail list" href="info@devstudio.com">
-              <svg class="box-contacts__icon box-contacts__icon--modificator" width="16" height="12">
+              <svg
+                class="box-contacts__icon box-contacts__icon--modificator"
+                width="16"
+                height="12"
+              >
                 <use href="./images/svg/icons.svg#envelope"></use>
               </svg>
               info@devstudio.com</a
@@ -59,7 +67,11 @@
           </li>
           <li class="box-contacts__item">
             <a class="box-contacts__phone list" href="tel:+380961111111">
-              <svg class="box-contacts__icon box-contacts__icon--modificator" width="12" height="16">
+              <svg
+                class="box-contacts__icon box-contacts__icon--modificator"
+                width="12"
+                height="16"
+              >
                 <use href="./images/svg/icons.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11
@@ -81,10 +93,9 @@
       <!-- особенности -->
       <section class="features section">
         <div class="container">
-          <h2 class="visually-hidden ">Особенности</h2>
+          <h2 class="visually-hidden">Особенности</h2>
 
           <ul class="features__items list">
-
             <li class="features__item features__antenna">
               <h3 class="features__title">Внимание к деталям</h3>
               <p class="features__text">
@@ -514,25 +525,31 @@
 
     <!-- підвал сторінки-->
     <footer class="footer">
-      <div class="container footer-blocks">
-        <h2 class="visually-hidden section-title">Все способьі коммуникации</h2>
-        <div class="footer-contacts">
-          <a class="footer-link list" href="index.html"
-            ><span class="logo-web">Web</span>
-            <span class="logo-footer">Studio</span>
-          </a>
-          <address>
-            <ul class="adress-list list">
+      <div class="footer__blocks container">
+        <h2 class="visually-hidden">Все способьі коммуникации</h2>
+        <div class="footer__contacts">
+          <div class="logo footer__logo">
+            <a class="list" href="index.html"
+              ><span class="logo__text-web logo__text-web--modificator"
+                >Web</span
+              >
+              <span class="logo__studio-footer logo__studio-footer--modificator"
+                >Studio</span
+              >
+            </a>
+          </div>
+          <address class="adress">
+            <ul class="adress__list list">
               <li>
-                <p class="adress-text">г. Киев, пр-т Леси Украинки, 26</p>
+                <p class="adress__text list">г. Киев, пр-т Леси Украинки, 26</p>
               </li>
               <li>
-                <a class="adress-link list" href="info@example.com"
+                <a class="adress__link list" href="info@example.com"
                   >info@example.com</a
                 >
               </li>
               <li>
-                <a class="adress-link list" href="tel:+380991111111"
+                <a class="adress__link list" href="tel:+380991111111"
                   >+38 099 111 11 11</a
                 >
               </li>
@@ -540,38 +557,38 @@
           </address>
         </div>
 
-        <div class="footer-social">
-          <strong class="social-subtitle">Присоединяйтесь</strong>
-          <ul class="social-links list">
-            <li class="social-network-li">
+        <div class="footer__social">
+          <strong class="footer__subtitle">Присоединяйтесь</strong>
+          <ul class="footer__social-links list">
+            <li class="footer__social-networks">
               <a
-                class="network-link"
+                class="footer__link"
                 href=""
                 target="_blank"
                 aria-label="инстаграм компании"
               >
-                <svg class="svg-social" width="20" height="20">
+                <svg width="20" height="20">
                   <use href="./images/svg/icons.svg#instagram"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="social-network-li">
+            <li class="footer__social-networks">
               <a
-                class="network-link"
+                class="footer__link"
                 href=""
                 target="_blank"
                 aria-label="твиттер компании"
               >
-                <svg class="svg-social" width="20" height="20">
+                <svg width="20" height="20">
                   <use href="./images/svg/icons.svg#twitter"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="social-network-li">
+            <li class="footer__social-networks">
               <a
-                class="network-link"
+                class="footer__link"
                 href=""
                 target="_blank"
                 aria-label="фейсбук компании"
@@ -582,9 +599,9 @@
               </a>
             </li>
 
-            <li class="social-network-li">
+            <li class="footer__social-networks">
               <a
-                class="network-link"
+                class="footer__link"
                 href=""
                 target="_blank"
                 aria-label="линкед ин компании"
@@ -596,13 +613,14 @@
             </li>
           </ul>
         </div>
-        <div class="footer-subscription">
-          <strong class="footer-strong">Подпишись на рассьілку</strong>
-          <form class="footer-form">
-            <input class="footerform-input" type="email" placeholder="E-mail" />
-            <button class="button-modal btn-footer" type="submit">
+
+        <div class="footer__subscription">
+          <strong class="footer__subtitle">Подпишись на рассьілку</strong>
+          <form class="footer__form">
+            <input class="footer__input" type="email" placeholder="E-mail" />
+            <button class="btn footer-btn" type="submit">
               Подписаться
-              <svg class="svg-button-footer" width="24" height="24">
+              <svg class="footer__button-icon" width="24" height="24">
                 <use href="./images/svg/icons.svg#icon-send"></use>
               </svg>
             </button>
