@@ -25,10 +25,11 @@
     border-radius: 4px;
     transition: fill var(--anim),
     border var(--anim);
-}
-
-.clients__link:hover,
-.clients__link:focus{
+    &:hover,
+    &:focus{
     fill: var(--brand-color);
     border: 1px solid var(--brand-color);
 }
+}
+
+

@@ -76,12 +76,11 @@
     fill: var(--text-third-tlbgc);
     transition: fill var(--anim),
     background-color var(--anim);
-}
-
-.footer__link:hover,
-.footer__link:focus{
+    &:hover,
+    &:focus{
     background-color: var(--brand-color);
     fill: var(--text-third-tlbgc);
+}
 }
 
 .footer__subscription{

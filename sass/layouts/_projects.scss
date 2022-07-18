@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+
 }
 .project__items:not(:last-child){
     margin-right: 8px;
@@ -23,16 +24,17 @@
     transition: color var(--anim),
     background-color var(--anim),
     box-shadow var(--anim);
-}
-
-.project__button:hover,
-.project__button:focus{
+    &:hover,
+    &:focus{
     background-color: var(--brand-color);
     color:var(--text-third-tlbgc);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+}
+
+
 
 .project__cards{
     display: flex;
@@ -45,12 +47,11 @@
     text-decoration: none;
     transition:
     box-shadow var(--anim);
-}
-
-.project__link:hover,
-.project__link:focus {
+    &:hover,
+    &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 }
 
 .project__card{
@@ -74,12 +75,13 @@
     color:var(--text-third-tlbgc);
     background-color: rgba(33, 150, 243, 0.9);
     transition-duration: 400ms;
+    .project__link:hover &{
+        transform: translateY(-100%);
+    
+    }
 }
 
-.project__link:hover .project__overlay{
-    transform: translateY(-100%);
 
-}
 
 .project__text{
     padding: 20px 24px;

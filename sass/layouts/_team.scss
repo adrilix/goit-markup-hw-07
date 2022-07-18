@@ -63,10 +63,11 @@
     fill: var(--social-icons);
     transition: fill var(--anim),
     background-color var(--anim);
-}
-
-.team__link:hover,
-.team__link:focus{
+    &:hover,
+    &:focus{
     background-color: var(--brand-color);
     fill: var(--text-third-tlbgc);
 }
+}
+
+
